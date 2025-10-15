@@ -4,12 +4,10 @@ import { useEffect, useState } from 'react'
 
 export default function SideNav() {
   const [role, setRole] = useState<'gm' | 'player'>('player')
-
   useEffect(() => {
     const r = (localStorage.getItem('archei:role') as 'gm' | 'player') || 'player'
     setRole(r)
   }, [])
-
   const isGM = role === 'gm'
 
   return (
@@ -25,12 +23,12 @@ export default function SideNav() {
           <Link href="/gm/npc" className="btn">Generatore NPC</Link>
           <Link href="/gm/monsters" className="btn">Generatore Mostri</Link>
           <Link href="/gm/notes" className="btn">Note</Link>
-
-          <div className="label mt-2">Display</div>
-          <Link href="/display" className="btn !bg-zinc-700">Display (locale)</Link>
-          <Link href="/display-online" className="btn !bg-zinc-700">Display (online)</Link>
         </>
       )}
+
+      <div className="label mt-2">Display</div>
+      <Link href="/display" className="btn !bg-zinc-700">Display (locale)</Link>
+      <Link href="/display-online" className="btn !bg-zinc-700">Display (online)</Link>
     </nav>
   )
 }
