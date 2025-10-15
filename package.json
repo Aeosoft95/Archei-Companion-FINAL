@@ -9,5 +9,10 @@
     "dev:ws": "pnpm --filter @archei/realtime-server dev",
     "build:ws": "pnpm --filter @archei/realtime-server build",
     "start:ws": "pnpm --filter @archei/realtime-server start"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.18.1",
+    "tsx": "4.15.7",
+    "typescript": "^5.9.3"
   }
 }

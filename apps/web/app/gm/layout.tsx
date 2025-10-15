@@ -1,10 +1,15 @@
 'use client'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import SideNav from '@/components/SideNav'
 import BackBar from '@/components/BackBar'
 
-export default function ToolsLayout({ children }: { children: React.ReactNode }) {
+export default function GmLayout({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = useState(true)
+
+  useEffect(() => {
+    const role = localStorage.getItem('archei:role')
+    if (role !== 'gm') window.location.href = '/'
+  }, [])
 
   return (
     <div className="flex min-h-screen">
@@ -17,7 +22,7 @@ export default function ToolsLayout({ children }: { children: React.ReactNode })
       </aside>
 
       <div className="flex-1">
-        <BackBar title="ARCHEI Companion" />
+        <BackBar title="ARCHEI Companion — GM" />
         <div className="p-4">{children}</div>
       </div>
     </div>
