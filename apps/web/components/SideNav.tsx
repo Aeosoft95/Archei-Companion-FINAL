@@ -12,23 +12,22 @@ export default function SideNav() {
 
   return (
     <nav className="flex flex-col gap-2">
-      {isGM && <Link href="/gm" className="btn !bg-zinc-800">GM Dashboard</Link>}
-      <Link href="/tools/chat" className="btn">Chat</Link>
+      {/* Player */}
+      <Link href="/tools/chat" className="btn">Chat (Player)</Link>
 
+      {/* GM */}
       {isGM && (
         <>
-          <div className="label mt-2">Strumenti GM</div>
-          <Link href="/gm/scene" className="btn">Scene</Link>
-          <Link href="/gm/clock" className="btn">Clock</Link>
-          <Link href="/gm/npc" className="btn">Generatore NPC</Link>
-          <Link href="/gm/monsters" className="btn">Generatore Mostri</Link>
-          <Link href="/gm/notes" className="btn">Note</Link>
+          <div className="label mt-2">GM</div>
+          <Link href="/gm/chat" className="btn">Chat + Dadi (GM)</Link>
+          <Link href="/gm" className="btn !bg-zinc-800">GM Dashboard</Link>
         </>
       )}
 
-      <div className="label mt-2">Display</div>
+      {/* (Opzionale) voci display, se le tieni ancora */}
+      {/* <div className="label mt-2">Display</div>
       <Link href="/display" className="btn !bg-zinc-700">Display (locale)</Link>
-      <Link href="/display-online" className="btn !bg-zinc-700">Display (online)</Link>
+      <Link href="/display-online" className="btn !bg-zinc-700">Display (online)</Link> */}
     </nav>
   )
 }

@@ -1,0 +1,58 @@
+{
+  "sceneByRoom": {
+    "demo": {
+      "t": "DISPLAY_SCENE_STATE",
+      "room": "demo",
+      "title": "asdasd",
+      "text": "asdasd"
+    }
+  },
+  "countdownByRoom": {
+    "demo": {
+      "t": "DISPLAY_COUNTDOWN",
+      "room": "demo",
+      "items": []
+    }
+  },
+  "clocksByRoom": {
+    "demo": {
+      "t": "DISPLAY_CLOCKS_STATE",
+      "room": "demo",
+      "clocks": [
+        {
+          "name": "asdasd",
+          "value": 0,
+          "max": 4
+        }
+      ]
+    }
+  },
+  "initiativeByRoom": {
+    "demo": {
+      "t": "DISPLAY_INITIATIVE_STATE",
+      "room": "demo",
+      "initiative": {
+        "entries": [
+          {
+            "id": "h0xzmg",
+            "name": "aa",
+            "init": 10
+          },
+          {
+            "id": "jnfxvm",
+            "name": "aa",
+            "init": 10
+          },
+          {
+            "id": "ucu3np",
+            "name": "aas",
+            "init": 10
+          }
+        ],
+        "active": 1,
+        "round": 1,
+        "visible": true
+      }
+    }
+  }
+}
