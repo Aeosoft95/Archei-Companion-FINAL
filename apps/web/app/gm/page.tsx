@@ -9,8 +9,8 @@ export default function GmDashboard() {
   }, [])
 
   const cards = [
-    { href: '/tools/chat', label: 'Chat + Tiradadi', icon: '🗨️' },
-    { href: '/gm/clock', label: 'Clock', icon: '⏲️' },
+    { href: '/gm/chat', label: 'Chat (GM)', icon: '🗨️' },
+    { href: '/gm/editor-clock', label: 'Editor Clock', icon: '⏲️' },
     { href: '/gm/scene', label: 'Scene', icon: '🎬' },
     { href: '/gm/npc', label: 'Generatore NPC', icon: '🧑‍🤝‍🧑' },
     { href: '/gm/monsters', label: 'Generatore Mostri', icon: '🐉' },

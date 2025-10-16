@@ -19,8 +19,9 @@ export default function SideNav() {
       {isGM && (
         <>
           <div className="label mt-2">GM</div>
-          <Link href="/gm/chat" className="btn">Chat + Dadi (GM)</Link>
-          <Link href="/gm" className="btn !bg-zinc-800">GM Dashboard</Link>
+		  <Link href="/gm" className="btn !bg-zinc-800">GM Dashboard</Link>
+          <Link href="/gm/chat" className="btn">Chat (GM)</Link>
+		  <Link href="/gm/editor-clock" className="btn">Editor Clock (GM)</Link>
         </>
       )}
 
